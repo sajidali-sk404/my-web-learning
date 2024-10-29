@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: aliceblue;
+        /* box-shadow: offset-x offset-y color; */
+        box-shadow: 7px 10px rgb(222, 159, 159);
+
+        /* box-shadow: offset-x offset-y color blur-redius; */
+        /* box-shadow: -7px -10px 10px rgb(222, 159, 159); // blur redius */
+
+        /* box-shadow: offset-x offset-y blur-redius spread-reduis  color  ; */
+        /* box-shadow: 7px 10px 10px 20px rgb(222, 159, 159); //spread redius */
+
+        /* box-shadow: inset 3px 5px goldenrod; // shadow under the box  */
+        /* box-shadow: 3px 5px green, 4px 6px red; // multiple shadows */
+
+    }
+    .card h2{
+        text-shadow:3px 1px 8px rebeccapurple;
+
+    }
+    h1{
+        text-align: center;
+    }
+    :root{
+            /* globle veriable */
+            --pramry-color: rgb(45, 35, 63);
+    }
+    .box{
+                /* local veriable */
+        --box-color: rgb(165, 191, 112); 
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-color);
+        border: 2px solid red;
+        box-shadow: 3px 4px var(--box-color);
+        margin:2px 9px;
+        
+        
+    }
+    .containr{
+        background-color: var(--pramry-color);
+    display: flex;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is c++ course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aut delectus atque optio illo ut
+                laudantium dolorum suscipit modi vel. Harum sed iure ab, ipsa voluptatum velit iusto quasi, aliquid
+                tenetur minima accusantium nostrum?</p>
+
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is html course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aut delectus atque optio illo ut
+                laudantium dolorum suscipit modi vel. Harum sed iure ab, ipsa voluptatum velit iusto quasi, aliquid
+                tenetur minima accusantium nostrum?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is CSS course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aut delectus atque optio illo ut
+                laudantium dolorum suscipit modi vel. Harum sed iure ab, ipsa voluptatum velit iusto quasi, aliquid
+                tenetur minima accusantium nostrum?</p>
+        </div>
+    </div>
+    
+     <h1>CSS veriables/ Custom properties</h1>
+     <div class="containr">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+</body>
+
+</html>

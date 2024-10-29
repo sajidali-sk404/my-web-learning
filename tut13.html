@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animations</title>
+</head>
+<style>
+
+    .container{
+        background-color: aquamarine;
+        
+    }
+    .box{
+        background-color: brown;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: sajid1; */
+        animation-name: sajid2;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        /* animation-iteration-count: infinite; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction:reverse; */
+        animation: sajid2 3s ease-in 1s 2 reverse forwards;
+
+    }
+    @keyframes sajid2 {
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 250px;
+            left: 0;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0;
+            left: 250px;
+        }
+        
+    }
+
+    @keyframes sajid1{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 1500px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is a Box</div>
+    </div>
+</body>
+</html>

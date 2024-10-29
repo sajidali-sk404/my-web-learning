@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(207, 242, 242);
+}
+.container{
+    background-color: antiquewhite;
+    border: 3px solid rgb(116, 116, 253);
+    /* padding: 20px; 
+    padding: 25px 35px 50px 75px;    /* padding = top right bottom left  
+    margin = top right bottom left */
+
+    /* padding: y(top/bottom) x(right/left); */
+    /* margin: y(top/bottom) x(right/left); */
+
+    padding: 34px 20px;
+    margin: 30px auto;
+    width: 600px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+}
+
+
+
+                /* Alignment CSS */
+.contanr{
+
+    font-family: 'Heebo', sans-serif;
+        width: 900px;
+        border: 4px solid black;
+        margin: auto;
+
+}
+.item{
+    border: 3px solid brown;
+    margin: 13px 16px;
+    background-color: aliceblue;
+    padding: 28px;
+}
+#fruits{
+    float:left;
+    width: 48%;
+    
+}
+#computer{
+    float: left;
+    width: 48%;
+    
+
+}
+#stationary{
+    float: left;
+    width: 60%;
+    
+}
